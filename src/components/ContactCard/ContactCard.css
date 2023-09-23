@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contactcard{
+    width: 250px;
+    height: 100px;
+    background-color: pink;
+    padding: 30px;
+    margin: 20px auto;
+}
+.contactname{
+    font-size: 40px;
+    color: rgb(133, 51, 66);
+    text-align: start;
+
+}
+.contactno{
+    font-size: 25px;
+    color: rgb(70, 12, 12);
+    text-align: center;
+    margin-top: 10px;
+}

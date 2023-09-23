@@ -1,0 +1,16 @@
+
+
+.searchbar{
+    width: 300px;
+   
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.searchbarcontainer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
