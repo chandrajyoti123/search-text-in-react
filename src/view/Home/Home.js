@@ -9,10 +9,11 @@ const Home = () => {
 
     useEffect(() => {
         const fliterAns = ContactDetails.filter((contactsinfo) => {
-            const name = contactsinfo.name.toLowerCase();
-            const mobileno = contactsinfo.mobileno.toString();
+            const {name,mobileno}=contactsinfo
+            const names = name.toLowerCase();
+            const mobilenos = mobileno.toString();
             const searchingvalue = search.toLowerCase();
-            return (name.includes(searchingvalue)) || (mobileno.includes(searchingvalue))
+            return (names.includes(searchingvalue)) || (mobilenos.includes(searchingvalue))
         })
         setContact(fliterAns)
     }, [search])
@@ -36,8 +37,10 @@ const Home = () => {
                     return (<ContactCard key={index} name={name} mobileno={mobileno} />)
                 })
             }
+         
         </div>
     )
+    
 }
 
 export default Home;
