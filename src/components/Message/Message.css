@@ -1,0 +1,24 @@
+.message{
+max-width: 200px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(235, 221, 223);
+    border-radius: 10px;
+    margin: 10px 5px;
+    word-wrap: break-word;
+    position: relative;
+   font-size: 20px;
+
+}
+.delete{
+    position: absolute;
+    top: 1px;
+    right:1px;
+    font-size: 15px;
+}
+.edit{
+    position: absolute;
+    top: 1px;
+    right:25px;
+    font-size: 15px;
+}

@@ -1,15 +1,17 @@
 import './ContactComponent.css'
 import logo from './logo.png'
 import chashni from './chashni.jpg'
-const ContactComponent = ({ img, name, time, messege }) => {
+const ContactComponent = ({ img, name, time, messege,index }) => {
+    const path=window.location.pathname;
+  
     return (
-        <div className="contact-component-parent">
+        <div id="contact-component-parent" className={path==`/bar${index}`?'active':''} >
             {/* <div className='contact-component-img-body'>
                 <img className='contact-component-img' src={img} />
             </div> */}
             <div className='contact-component-img-body'>
                         <div className='dpcontainer'>
-                            <img src={chashni} className='dp' />
+                            <img src={img} className='dp' />
                         </div>
                     </div>
             

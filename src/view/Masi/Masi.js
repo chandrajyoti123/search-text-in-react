@@ -1,16 +1,15 @@
-import chashni from './chashni.jpg'
-import whatsapp from "./whatsapp1.png"
+
 import Message from '../../components/Message/Message';
-import './Home.css'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashArrowUp, faMagnifyingGlass, faEllipsisVertical, faVideo, faMicrophone, faPlus, faAngleDown,faPaperPlane,faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faFaceGrin } from "@fortawesome/free-regular-svg-icons";
 import { ContactData } from '../../contactdata/contactdata';
 import ContactComponent from '../../components/ContactComponent/ContactComponent';
 import { useEffect, useState } from 'react';
-import logo from './logo.png'
+
 import { Link } from 'react-router-dom';
-const Home = ({dp,name,activity }) => {
+const Masi = ({dp,name,activity }) => {
     const [contactinfo, setContactinfo] = useState(ContactData)
     const [searchvalue, setSearchvalue] = useState('')
     useEffect(() => {
@@ -36,7 +35,7 @@ const Home = ({dp,name,activity }) => {
 
     ])
     useEffect(()=>{
-        const readlocal = JSON.parse(localStorage.getItem("list"));
+        const readlocal = JSON.parse(localStorage.getItem("masi"));
         if (readlocal && readlocal.length > 0) {
             setMessagecon(readlocal);
           }
@@ -44,7 +43,7 @@ const Home = ({dp,name,activity }) => {
     },[])
     const settolocalstorage = (meesage) => {
         const messagevar = JSON.stringify(meesage);
-        localStorage.setItem("list",messagevar);
+        localStorage.setItem("masi",messagevar);
       };
 
    const [messagebund,setMessagebund]=useState(messagecon)
@@ -136,12 +135,12 @@ const sendeditedtext=()=>{
                 <div className='rightsidetop'>
                     <div className='parentofdp'>
                         <div className='dpcontainer'>
-                            <img src={dp == null ? chashni : dp} className='dp' />
+                            <img src={ dp} className='dp' />
                         </div>
                     </div>
                     <div className='contactinfo'>
-                        <div className='name'>{name == null ? "chanshni" : name}</div>
-                        <div className='activity-status'>{activity == null ? "online" : activity}</div>
+                        <div className='name'>{name}</div>
+                        <div className='activity-status'>{activity}</div>
 
                     </div>
                     <div className='calling'>
@@ -194,4 +193,4 @@ const sendeditedtext=()=>{
         </div>
     )
 }
-export default Home;
+export default Masi;
