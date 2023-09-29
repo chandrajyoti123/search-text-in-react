@@ -124,6 +124,7 @@ color: rgb(70, 63, 63);
     align-items: end;
     flex-direction: column;
     justify-content: start;
+    padding: 10px;
   
 }
 
