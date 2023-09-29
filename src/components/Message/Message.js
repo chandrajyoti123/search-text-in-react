@@ -10,7 +10,7 @@ const Message=({text,deletefun,obj,editmessage,index,id})=>{
             <span><FontAwesomeIcon icon={faXmark} className='delete' onClick={()=>{
                 deletefun(obj)
             }}/></span>
-            <span><FontAwesomeIcon icon={faPen} className='edit' onClick={()=>{
+            <span><FontAwesomeIcon icon={faPen} className='edit'  onClick={()=>{
                 editmessage(index)
             }}/></span>
 
