@@ -12,7 +12,8 @@
   overflow:scroll;
 }
 /* .letfsideofhome::-webkit-scrollbar { 
-    width: 100px; 
+   
+    height: 100px;
   } */
 .searchbarparent{
     width: 100%;

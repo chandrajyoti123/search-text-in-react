@@ -65,6 +65,7 @@ const arr=[...messagecon,obj]
 setMessagecon(arr)
 setText("")
 settolocalstorage(arr)
+window.scrollTo(200, 0);
 }
 const deletemessage=(obj)=>{
     const index=messagecon.indexOf(obj)
