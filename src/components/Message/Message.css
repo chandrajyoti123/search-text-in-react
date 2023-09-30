@@ -1,5 +1,5 @@
-.message{
-max-width: 350px;
+/* .containerofmessage{
+max-width: 550px;
 min-width: 90px;
     height: auto;
     padding: 10px 0;
@@ -10,10 +10,17 @@ min-width: 90px;
     word-wrap: break-word;
     position: relative;
    font-size: 30px;
+   display: flex;
  
  
 
+} */
+/* .message{
+    width:auto;
+height: 100%;
+background-color: red;
 }
+
 .delete{
     position: absolute;
     top: -3px;
@@ -27,17 +34,97 @@ min-width: 90px;
     font-size: 15px;
 }
 .timeofmessage{
-    width: 80px;
+    width:100px;
     height: 100%;
     background-color: pink;
     font-size: 18px;
-  color: rgb(112, 105, 105);
-  position: relative;
-  top: 0;
-  right: 0;
-display: flex;
-justify-content: end;
-align-items: end;
+    color: rgb(112, 105, 105);
+   display: inline-block;
 
   
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maincontainerofmessage{
+    width: auto;
+    height: auto;
+     margin:10px 20px;
+}
+
+.edit{
+    width: 70px;
+    height: 100%;
+    background-color: transparent;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  
+ 
+}
+/* .editpencont{
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+} */
+.editpen{
+    font-size: 20px;
+   position: absolute;
+   top: 20px;
+   background-color:  rgb(214, 249, 208);
+   box-shadow: 0 0 5px 1px rgba(109, 138, 106,0.3);
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(112, 105, 105);
+}
+
+
+.containerofmessage{
+    width:auto;
+    height: auto;
+    
+   
+   padding: 10px 20px ;
+    background-color: rgb(214, 249, 208);
+    position: relative;
+    border-radius: 10px;
+    display: inline-block;
+}
+.delete{
+    font-size: 20px;
+    position:absolute;
+top: 1px;
+right:1px;
+color: rgb(112, 105, 105);
+}
+.message{
+    max-width: 300px;
+    min-width: auto;
+    height: 100%;
+   
+    display: inline-block;
+    /* padding: 10px; */
+    word-wrap: break-word;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(53, 50, 50);
+   border-radius: 10px;
+}
+.timeofmessage{
+    width: 90px;
+    height: 100%;
+    /* background-color: rgb(175, 231, 175); */
+    display: inline-block;
+       /* padding-top: 10px; */
+       padding-left:20px;
+       font-size: 18px;
+       color: rgb(112, 105, 105);
+       border-radius: 10px;
+       
 }

@@ -6,17 +6,24 @@ const Message=({text,deletefun,obj,editmessage,index,id})=>{
       const hourse=date.getHours()
       const minute=date.getMinutes()
     return(
-        <div className="message" id={id}>
+        <div className='maincontainerofmessage'>
+            <div className='edit'>
+                 <span className='editpencont'>
+                    <FontAwesomeIcon icon={faPen} className='editpen'  onClick={()=>{
+                editmessage(index)
+                   }}/>
+            </span>
+            </div>
+        <div className="containerofmessage" id={id}>
             <span><FontAwesomeIcon icon={faXmark} className='delete' onClick={()=>{
                 deletefun(obj)
             }}/></span>
-            <span><FontAwesomeIcon icon={faPen} className='edit'  onClick={()=>{
-                editmessage(index)
-            }}/></span>
+           
 
-           {text}
+           <div className='message'>{text}</div>
            <div className='timeofmessage'>{`${hourse}:${minute}pm`}</div>
 
+        </div>
         </div>
     )
 
