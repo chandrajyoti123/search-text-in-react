@@ -74,6 +74,8 @@ settolocalstorage(virtuallarr)
 }
 const editMessage=(id)=>{
     setIsedit(true)
+    setId(id)
+
   messagecon.forEach((meesage)=>{
     let messagestore
     if(meesage.id===id){

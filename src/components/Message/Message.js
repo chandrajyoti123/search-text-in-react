@@ -21,7 +21,7 @@ const Message=({text,deletefun,obj,editmessage,index,id})=>{
            
 
            <div className='message'>{text}</div>
-           <div className='timeofmessage'>{`${hourse}:${minute}pm`}</div>
+           <div className='timeofmessage'>{hourse}:{minute}{hourse>12?"pm":"am"}</div>
 
         </div>
         </div>

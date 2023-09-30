@@ -84,7 +84,7 @@ import {
     },
     {
       path: "/bar8",
-      element:<Mummy name={"Mymmy"} activity={"last seen 1:40pm"} dp={mummy}/>,
+      element:<Mummy name={"Mummy"} activity={"last seen 1:40pm"} dp={mummy}/>,
     },
     {
       path: "/bar9",

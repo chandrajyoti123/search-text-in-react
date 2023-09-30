@@ -111,13 +111,13 @@ color: rgb(112, 105, 105);
     display: inline-block;
     /* padding: 10px; */
     word-wrap: break-word;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: lighter;
     color: rgb(53, 50, 50);
    border-radius: 10px;
 }
 .timeofmessage{
-    width: 90px;
+    width: 60px;
     height: 100%;
     /* background-color: rgb(175, 231, 175); */
     display: inline-block;
@@ -126,5 +126,6 @@ color: rgb(112, 105, 105);
        font-size: 18px;
        color: rgb(112, 105, 105);
        border-radius: 10px;
+       padding-top: 10px;
        
 }

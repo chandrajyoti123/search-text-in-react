@@ -75,6 +75,7 @@ settolocalstorage(virtuallarr)
 }
 const editMessage=(id)=>{
     setIsedit(true)
+    setId(id)
   messagecon.forEach((meesage)=>{
    
    
@@ -84,6 +85,7 @@ const editMessage=(id)=>{
         }
 
   })
+  
 
 }
 const sendeditedtext=()=>{

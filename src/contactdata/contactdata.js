@@ -67,7 +67,7 @@ export const ContactData= [
     },
     {
        img:mummy,
-       name:"Mymmy",
+       name:"Mummy",
        time:"11:30am",
        messege:"Katna dalna he"
     },
