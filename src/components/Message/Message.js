@@ -10,7 +10,7 @@ const Message=({text,deletefun,obj,editmessage,index,id})=>{
             <div className='edit'>
                  <span className='editpencont'>
                     <FontAwesomeIcon icon={faPen} className='editpen'  onClick={()=>{
-                editmessage(index)
+                editmessage(id)
                    }}/>
             </span>
             </div>
