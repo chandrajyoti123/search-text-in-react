@@ -72,14 +72,13 @@ const deletemessage=(obj)=>{
 setMessagecon([...virtuallarr])
 settolocalstorage(virtuallarr)
 }
-const editMessage=(index)=>{
+const editMessage=(id)=>{
     setIsedit(true)
   messagecon.forEach((meesage)=>{
-    let messagestore
-    if(messagecon.indexOf(meesage)===index){
-        messagestore=meesage
-    }
-    setText(messagestore.text)
+    if(meesage.id===id){
+        const messagestore=meesage
+        setText(messagestore.text)
+     }
 
   })
 
