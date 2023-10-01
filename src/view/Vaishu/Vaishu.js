@@ -121,7 +121,7 @@ const sendeditedtext=()=>{
                           setSearchvalue(e.target.value)
                        }} />
                     </div>
-                    <div className='searchbaricon'>
+                    <div className= 'searchbaricon'>
 
                     </div>
 
