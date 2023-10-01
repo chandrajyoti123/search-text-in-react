@@ -106,6 +106,7 @@ const sendeditedtext=()=>{
     setMessagecon([...temparr]);
     setText('')
     setIsedit(false)
+    settolocalstorage(temparr)
     
 
 }

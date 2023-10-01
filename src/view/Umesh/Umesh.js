@@ -83,6 +83,7 @@ const editMessage=(id)=>{
      }
 
   })
+  
 
 }
 const sendeditedtext=()=>{
@@ -103,6 +104,7 @@ const sendeditedtext=()=>{
     setMessagecon([...temparr]);
     setText('')
     setIsedit(false)
+    settolocalstorage(temparr)
     
 
 }
