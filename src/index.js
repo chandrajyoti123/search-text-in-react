@@ -5,7 +5,7 @@ import Home from './view/Home/Home';
 import logo from './img/logo.png'
 import tara from './img/tara.jpg'
 import akash from './img/akash.jpg'
-import harshali from './img/harshali.jpg'
+import harshali from ' ./img/harshali.jpg'
 import krishandas from './img/krishdas.jpg'
 import Satish from './img/satish-bhai.jpg'
 import sonu from './img/sonu-bhai.jpg'
